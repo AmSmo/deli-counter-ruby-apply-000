@@ -24,9 +24,14 @@ end
 # end
 
 
-$count= 0
+# $count= 0
 def take_a_number(store)
-    $count += 1
+    if store[-1] != nil
+      count = store[-1]
+    else
+      count = 0
+    end
+    count += 1
     store.push(count)
     puts "Currently serving #{store[-1]}"
 end
