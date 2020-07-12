@@ -24,9 +24,9 @@ end
 # end
 
 
-count= 0
+$count= 0
 def take_a_number(store)
-    count += 1
+    $count += 1
     store.push(count)
     puts "Currently serving #{store[-1]}"
 end
